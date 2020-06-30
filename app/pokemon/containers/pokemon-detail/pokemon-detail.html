@@ -1,0 +1,35 @@
+<div>
+    <nav>
+    <button class="nav" (click)="goBack()">&lsaquo; Go back</button>
+    </nav>
+</div>
+<br>
+<div class="col-3">
+  <div class="card text-center">
+    <div class="card-header">
+      Pokemon Details
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ pokemon?.poke_id}}# {{ pokemon?.name}}</h5>
+      <p class="card-text">
+          <b>Base stats:</b><br>
+          HP: {{ pokemon?.base_stats.hp}}<br>
+          Attack: {{ pokemon?.base_stats.attack}}<br>
+          Defense: {{ pokemon?.base_stats.defense}}<br>
+          Sp. Attack: {{ pokemon?.base_stats.sp_attack}}<br>
+          Sp. Defense: {{ pokemon?.base_stats.sp_defense}}<br>
+          Speed: {{ pokemon?.base_stats.speed}}<br>
+
+      </p>
+      <button disabled class="btn btn-primary">
+        Types: {{ pokemon?.types}}
+      </button>
+    </div>
+    
+  </div>
+  <br>
+  <button (click) ="next(pokemon?.poke_id)"class="col-12">Next</button>
+  <hr><br>
+  <button class="col-12" (click)= "previous(pokemon?.poke_id)" *ngIf="pokemon?.poke_id != 1 ">Previous</button>
+  <hr>
+</div>

@@ -1,0 +1,27 @@
+<div class="limiter">
+  <div class="container-table100">
+    <div class="wrap-table100">
+      <div class="table100">
+        <table>
+          <thead>
+            <tr class="table100-head">
+              <th class="column2">Pokemon ID</th>
+              <th class="column3">Name</th>
+              <th class="column4">Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              (click)="goToPokemon(pokemon.poke_id)"
+              *ngFor="let pokemon of pokemons"
+            >
+              <td class="column2">{{pokemon.poke_id}}</td>
+              <td class="column3">{{pokemon.name}}</td>
+              <td class="column4">{{pokemon.types}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+{
+  "passengers": [
+    {
+      "fullname": "Julian",
+      "id": 1,
+      "checkedIn": true,
+      "baggage": "none",
+      "checkInDate": 1490742000000
+    },
+    {
+      "fullname": "Steve",
+      "id": 2,
+      "checkedIn": true,
+      "baggage": "niños",
+      "checkInDate": 1490742000000
+    },
+    {
+      "id": 3,
+      "fullname": "Todd Motto",
+      "checkedIn": true,
+      "checkInDate": 1488412800000,
+      "baggage": "hold-only"
+    },
+    {
+      "id": 4,
+      "fullname": "Louise",
+      "checkedIn": true,
+      "checkInDate": 1488412800000,
+      "baggage": "none"
+    },
+    {
+      "fullname": "Tinaj",
+      "id": 5,
+      "checkedIn": false,
+      "baggage": "hand-only"
+    },
+    {
+      "id": 132,
+      "fullname": "Steve",
+      "checkedIn": true,
+      "checkInDate": 1490742000000,
+      "baggage": "niños"
+    }
+  ]
+}

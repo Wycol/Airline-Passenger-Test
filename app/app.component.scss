@@ -1,0 +1,28 @@
+.nav {
+    margin: 0 0 10px;
+    padding: 0 0 20px;
+    border-bottom:  1px solid white;
+    a{
+        background: #3a4250;
+        color: white;
+        padding: 4px 10px;
+        margin: 0 2px;
+        border-radius: 2px;
+        &.active {
+            color: green;
+            background: #363c48;
+        }
+    }
+}
+.status {
+    width: 10px;
+    height: 10px;
+    background:  #c0392b;
+    display: block;
+    margin: 8px 10px 0 0;
+    float: left;
+    border-radius: 50%;
+    &.checked-in {
+        background: #22eecc;
+    }
+}
